@@ -1,0 +1,14 @@
+{
+    "license": "proprietary",
+    "name": "leandro/app",
+    "description": "descripcion",
+    "autoload": {
+        "psr-4": {
+            "Softwareflex\\Viauy\\": "src/"
+        }
+    },
+    "require": {
+        "tecnickcom/tcpdf": "^6.6",
+        "phpmailer/phpmailer": "^6.8"
+    }
+}

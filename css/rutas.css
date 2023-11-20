@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 2px;
+    font-size: 24px;
+  }
+  .container div{
+    background-color: #b9b3b3;
+  }
+  .reg_ver{
+    width: auto;
+    max-width: 96%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}

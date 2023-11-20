@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+a:active{
+    color: black;
+}
+
+a:link{
+    color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: inline-block;
+    background: #EAEBEF;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+.reservarbody{
+    background-image: url(/imagen/imagenfondo.jpg);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+   
+}
+
+header{
+    width: 100%;
+    position: inherit; 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+label{
+    color: black;
+}
+
+.card{
+    background-color: rgb(48, 134, 59);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 120%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 250px;
+    height: 220px;
+    border-radius: 8px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 255, 85, 0.596);
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+    user-select: none;
+    
+}
+
+i{
+    color: rgb(255, 255, 255);
+}
+
+#ico1{
+    color:rgb(0, 0, 0);
+}
+
+#ico2{
+    color: rgb(0, 0, 0);
+}
+
+.prod{
+    background-color: rgb(48, 134, 59);
+    text-align: center;
+    font-size: 60px;
+    font-family: monospace;
+}
+
+.slider{
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider li{
+    width: 100%;
+    height: 450px;
+    list-style: none;
+}
+
+.slider ul{
+    width: 300%;
+    display: flex;
+    padding:0;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+
+.slider img{
+    margin: auto;
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    30% {margin-left: 0;}
+
+    35% {margin-left: -100%;}
+    70% {margin-left: -100%;}
+
+    75% {margin-left: -200%;}
+    100% {margin-left: -200%;}    
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.list{
+    padding-left: 10px;
+    width: 110%;
+    height: 90px;
+    display: flex;
+    flex-direction:row;
+    border-radius: 0 16px 16px 0;
+    background: #fff;
+    font-size: 25px;
+}
+
+
+.list__item{
+    padding: 5px 0;
+    height: 100%;
+    list-style: none;
+    width: auto;
+    a{
+        img{
+            height: 100%;
+        }
+    }
+}
+
+.list_img{
+    width: 100%;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 50%;
+    margin: 0 20px;
+    background-color: #fff;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: 40px;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+    background-color: #fff;
+}
+
+
+.menu{
+    display: block;
+    padding: 25px 0;
+    text-decoration: none;
+    margin-right: 0 20px;
+    width: 110px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    border-radius: 0 16px 16px 0;
+    background: #fff;
+    
+}
+a:hover{
+    color: #39e96d;
+}
+a:not([href]) {
+    cursor: pointer;
+   
+  }
+
+.ContenidoContacto {
+    background-color: rgb(48, 134, 59);
+    color: #fff;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16.5px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    clear: both;
+    font-size: 25px;
+}
+
+.ContactoIndex {
+    background-color: rgb(48, 134, 59);
+    margin-top: 2em;
+    padding: 1em;
+    clear: both;
+    color: #fff;
+}
+
+.ContactoReservar {
+    background-color: rgb(48, 134, 59);
+    margin-top: 2em;
+    padding: 1em;
+    clear: both;
+    color: #fff;
+}
+
+.izquierda {
+    width: 100%;
+    display: inline-block;
+    vertical-align: text-top;
+    padding-left: 80px;
+}
+.noticias{
+    height: auto;
+}
+.bus{
+height: 100%;
+}
+.newsletter input, .newsletter input[type="submit" i], #mc_embed_signup input {
+
+    border: 0px;
+    padding: 0.5em;
+    color:  rgb(36, 134, 49);
+    background-color: #fff;
+    border-radius: 2px;
+    width: auto;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 1em;
+    transition: .3s;
+}
+.nav .login{
+    text-align: right;
+}
+.login{
+    text-align: right;
+    display: flex;
+    padding: 25px 0;
+    padding-right: 12px;
+    text-decoration: none;
+    margin-right: 0 20px;
+    height: 90px;
+    justify-content: right;
+    flex-direction:row;
+    border-radius: 0 16px 16px 0;
+    font-size: 25px;
+}
+.login__item{
+    padding-right: 7px;  
+    font-size: 25px;
+}
+.enc{
+    font-size: 1.5em;
+}
+
+.reservar-wrapper > * {
+    padding: 1em;
+}
+
+.reservar-form {
+    height: 590px;
+}
+
+.reservar-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.reservar-form form label {
+    display: block;
+}
+
+.reservar-form form section {
+    margin: 0;
+    padding: 1em;
+}
+
+.reservar-form form button,
+.reservar-form form input,
+.reservar-form form textarea {
+    width: 100%;
+    padding: 25px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: black;
+    border-bottom: 1px solid #03e71a;
+}
+
+.reservar-form form button {
+    background: #05af4b;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.reservar-form form button:hover,
+.reservar-form form button:focus {
+    background: #03e71a;
+    color: #ffffff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.texto{
+    background-color: white;
+    display: block;
+    height: 115%;
+}
+
+.form-control{
+    width: 100px;
+}
+
+.imagenes{
+    background-image: url(../imagen/imagenfondo2.jpg);
+    background-size: cover;
+}
+.menu__links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+    position: relative;
+   
+}
+
+.menu__item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+
+.on {
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0);
+}
+.menu__link{
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 100%;
+    flex-direction:row;
+  
+}
+
+
+
+.menu__nesting{
+    list-style: none;
+    transition:clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background:rgb(36, 134, 49);
+    border-radius: 16px 16px 16px 16px;
+    z-index: 999;
+}
+
+.menu__link--inside{
+    padding: 30px 100px 30px 20px;
+    
+}
+
+
+.nav.menu__cel{
+    display: none;
+}
+
+.menu__img{
+    display: block;
+    width: 36px;
+}
+#mensaje{
+    color: red;
+}
+.text{
+    font-size: 40px;
+}
+.Error_mensage{
+    font-size: 80px;
+    color: red;
+}
+.sli li{
+    width: 40%;
+    height: auto;
+}
+.menu__img{
+    display: block;
+    width: 36px;
+}
+.name{
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: center; 
+}
+@media (max-width: 600px){
+    header{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .nav.menu__cel{
+        display: flex;
+        height: auto;
+        width: auto;
+    }    
+    .nav{
+       display:none;
+    }
+    .menu__nesting{
+        list-style: none;
+        transition:clip-path .3s;
+        clip-path: var(--clip);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: max-content;
+        transform: translateY(101.5%);
+        background:rgb(36, 134, 49);
+        border-radius: 16px 16px 16px 16px;
+        z-index: 999;
+    }
+    .ContenidoContacto{
+        display: flex;
+        flex-direction: column;
+    }
+    }
